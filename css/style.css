@@ -157,12 +157,7 @@ nav div.show {
   flex-direction: column;
   align-items: center;
 }
-.add-flex .stuffed-cherries {
-  background: url("tienda.jpg") no-repeat center center;
-  background-size: cover;
-  height: 315px;
-  width: 320px;
-}
+
 
 .center-h1 {
   display: flex;
@@ -260,7 +255,7 @@ footer button {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1.2px;
-  line-height: 1.2;
+  line-height: 1.2em;
   border-radius: 50%;
   margin-top: 0;
 }
@@ -296,18 +291,20 @@ footer .copyright span {
 */
 @media screen and (max-width: 425px) {
   header, .bread-background, .cake-background {
-    background-attachment: scroll;
-  }
+    background-attachment: scroll;  }
   li{
 padding-top: 1em}
   .custom-font {
-  font-size: 50px;}
+  font-size: 50px;
+ line-height: 30px;
+  }
 }
 @media screen and (max-width: 768px) {.custom-font {
   font-size: 50px;}
   h1{font-size:1em;}
   li{
 padding-top:0.8em}
+
 }
  
 @media (min-width: 769px) {
@@ -411,8 +408,10 @@ padding: 1em;}
           animation-delay: 1.3s;
 }
 
-.tienda{width:450px;
-padding: 1em;}
+.tienda{width:200px;
+  height: 200px;
+padding: 2em;
+border-radius: 10em;}
 .center h2 {
   -webkit-transform: scale(2);
           transform: scale(2);
